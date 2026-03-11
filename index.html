@@ -12,6 +12,8 @@
     <meta property="og:image" content="https://maxremus.github.io/passive_income/11135142.png">
 <meta property="og:url" content="https://maxremus.github.io/passive_income/">
 <meta property="og:site_name" content="PassiveIncome">
+    <link rel="alternate" hreflang="bg" href="https://maxremus.github.io/passive_income/">
+<link rel="alternate" hreflang="en" href="https://maxremus.github.io/passive_income/?lang=en">
 
 
 
@@ -201,13 +203,15 @@ footer{
         <a href="#how">Как работи</a>
         <a href="#income">Доход</a>
         <a href="#steps">Стъпки</a>
+        <a href="#" onclick="setLang('bg')">BG</a>
+        <a href="#" onclick="setLang('en')">EN</a>
     </nav>
 </header>
 
 
 <section class="hero">
     <div class="hero-text">
-        <h1>Печели от интернет връзката си</h1>
+        <h1 id="hero-title">Печели от интернет връзката си</h1>
         <p>Без инвестиция. Работи във фонов режим. Пасивен доход 24/7.</p>
         <a class="btn" href="https://join.honeygain.com/MAXTU1CCCE" target="_blank">
             Започни сега
@@ -422,9 +426,50 @@ new Chart(ctx, {
 }
 </script>
 
+    <script>
+
+const translations = {
+
+bg: {
+heroTitle: "Печели от интернет връзката си",
+heroText: "Без инвестиция. Работи във фонов режим. Пасивен доход 24/7.",
+startBtn: "Започни сега",
+howTitle: "Как работи?",
+install: "Инсталираш",
+installText: "Изтегляш и стартираш приложението.",
+leave: "Оставяш включено",
+leaveText: "Работи във фонов режим.",
+earn: "Печелиш",
+earnText: "Получаваш пасивен доход."
+},
+
+en: {
+heroTitle: "Earn Money From Your Internet Connection",
+heroText: "No investment. Runs in the background. Passive income 24/7.",
+startBtn: "Start Now",
+howTitle: "How Does It Work?",
+install: "Install",
+installText: "Download and install the application.",
+leave: "Leave it running",
+leaveText: "Runs in the background automatically.",
+earn: "Earn",
+earnText: "Receive passive income."
+}
+
+};
+
+function setLang(lang){
+
+document.getElementById("hero-title").innerText = translations[lang].heroTitle;
+
+}
+
+</script>
+
 
 
 </body>
 </html>
+
 
 
