@@ -67,6 +67,26 @@ opacity:0.8;
 margin-bottom:30px;
 }
 
+.hero{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:50px;
+flex-wrap:wrap;
+padding:40px;
+}
+
+.hero-img{
+width:400px;
+animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-15px)}
+100%{transform:translateY(0)}
+}
+
 .btn{
 background:#22c55e;
 color:#0f172a;
@@ -136,6 +156,9 @@ target="_blank">
 </a>
 
 </div>
+
+<img class="hero-img" <img class="hero-img"
+src="https://maxremus.github.io/passive_income/11135142.png" alt="Make money online">
 
 </section>
 
@@ -300,3 +323,4 @@ document.getElementById("moneyA").innerText = translations[lang].moneyA
 
 </body>
 </html>
+
